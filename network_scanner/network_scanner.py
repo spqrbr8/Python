@@ -5,7 +5,7 @@ import argparse
 
 def get_argument():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--ip", dest="ip", help="Add IP address")
+    parser.add_argument("-t", "--target", dest="ip", help="Add target IP address")
     options = parser.parse_args()
     if not options.ip:
         parser.error("[-] Please specify an IP address, use --help for more info")
